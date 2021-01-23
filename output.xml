@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210123 16:49:37.645" rpa="false">
+<suite id="s1" name="Amazon" source="C:\robotics\robot_workspace\Amazon">
+<suite id="s1-s1" name="Verify User" source="C:\robotics\robot_workspace\Amazon\Verify_User">
+<suite id="s1-s1-s1" name="ValidUser" source="C:\robotics\robot_workspace\Amazon\Verify_User\ValidUser.robot">
+<test id="s1-s1-s1-t1" name="Tc1_Test">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>${OUTPUT_DIR}//driver</arg>
+</arguments>
+<msg timestamp="20210123 16:49:38.135" level="INFO">Environment variable 'Path' set to value 'C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/CTEA/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Python;C:\Python\Scripts;C:\xampp\mysql\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk1.8.0_271\bin;C:\Program Files\Git\cmd;C:\Users\CTEA\AppData\Local\Android\Sdk\platform-tools;C:\Users\CTEA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\CTEA\AppData\Local\Microsoft\WindowsApps;C:\Users\CTEA\Desktop\robotics\geckodriver-v0.28.0-win32;;C:\Users\CTEA\Desktop;;C:\robotics\robot_workspace\Amazon//driver'.</msg>
+<status status="PASS" starttime="20210123 16:49:38.134" endtime="20210123 16:49:38.135"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.amazon.in/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20210123 16:49:38.136" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20210123 16:49:38.135" endtime="20210123 16:49:52.298"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210123 16:49:52.298" endtime="20210123 16:49:56.789"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:49:56.790" endtime="20210123 16:49:56.796"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>40s</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:49:56.796" endtime="20210123 16:49:56.814"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//span[text()='All'])[2]</arg>
+</arguments>
+<msg timestamp="20210123 16:49:56.815" level="INFO">Clicking element '(//span[text()='All'])[2]'.</msg>
+<status status="PASS" starttime="20210123 16:49:56.815" endtime="20210123 16:49:57.793"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//b[text()='Hello, Sign in']</arg>
+</arguments>
+<msg timestamp="20210123 16:49:57.794" level="INFO">Clicking element '//b[text()='Hello, Sign in']'.</msg>
+<status status="PASS" starttime="20210123 16:49:57.793" endtime="20210123 16:50:00.973"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name='email']</arg>
+<arg>valli.potlacheruvu@gmail.com</arg>
+</arguments>
+<msg timestamp="20210123 16:50:00.974" level="INFO">Typing text 'valli.potlacheruvu@gmail.com' into text field '//input[@name='email']'.</msg>
+<status status="PASS" starttime="20210123 16:50:00.973" endtime="20210123 16:50:02.886"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='continue']</arg>
+</arguments>
+<msg timestamp="20210123 16:50:02.887" level="INFO">Clicking element '//input[@id='continue']'.</msg>
+<status status="PASS" starttime="20210123 16:50:02.886" endtime="20210123 16:50:05.411"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="password"]</arg>
+<arg>bujji2023</arg>
+</arguments>
+<msg timestamp="20210123 16:50:05.412" level="INFO">Typing text 'bujji2023' into text field '//input[@name="password"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:05.411" endtime="20210123 16:50:05.811"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='signInSubmit']</arg>
+</arguments>
+<msg timestamp="20210123 16:50:05.812" level="INFO">Clicking element '//input[@id='signInSubmit']'.</msg>
+<status status="PASS" starttime="20210123 16:50:05.812" endtime="20210123 16:50:06.317"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id="twotabsearchtextbox"]</arg>
+<arg>Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large</arg>
+</arguments>
+<msg timestamp="20210123 16:50:06.318" level="INFO">Typing text 'Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large' into text field '//input[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:06.318" endtime="20210123 16:50:18.196"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@id="nav-search-submit-text"]</arg>
+</arguments>
+<msg timestamp="20210123 16:50:18.197" level="INFO">Clicking element '//span[@id="nav-search-submit-text"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:18.197" endtime="20210123 16:50:27.081"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//img[@alt='Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large']</arg>
+</arguments>
+<msg timestamp="20210123 16:50:27.083" level="INFO">Clicking element '//img[@alt='Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large']'.</msg>
+<status status="PASS" starttime="20210123 16:50:27.082" endtime="20210123 16:50:38.064"></status>
+</kw>
+<kw name="Get Window Titles" library="SeleniumLibrary">
+<doc>Returns and logs titles of all windows of the selected browser.</doc>
+<assign>
+<var>${titles}</var>
+</assign>
+<msg timestamp="20210123 16:50:40.639" level="INFO">Altogether 1 item.
+1: Buy Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large Online at Low Prices in India - Amazon.in</msg>
+<msg timestamp="20210123 16:50:40.640" level="INFO">${titles} = ['Buy Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large Online at Low Prices in India - Amazon.in']</msg>
+<status status="PASS" starttime="20210123 16:50:38.065" endtime="20210123 16:50:40.640"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${titles}</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:50:40.641" endtime="20210123 16:50:40.642"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${titles}</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20210123 16:50:40.642" level="INFO">Length is 1</msg>
+<msg timestamp="20210123 16:50:40.643" level="INFO">${count} = 1</msg>
+<status status="PASS" starttime="20210123 16:50:40.642" endtime="20210123 16:50:40.643"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${count}</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:50:40.643" endtime="20210123 16:50:40.644"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${count}&gt;1</arg>
+<arg>Switch Window</arg>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:50:40.644" endtime="20210123 16:50:40.644"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>//input[@name="submit.add-to-cart"]</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:50:40.645" endtime="20210123 16:50:40.806"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="submit.add-to-cart"]</arg>
+</arguments>
+<msg timestamp="20210123 16:50:40.807" level="INFO">Clicking element '//input[@name="submit.add-to-cart"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:40.806" endtime="20210123 16:50:44.014"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id="nav-cart-count-container"]</arg>
+</arguments>
+<msg timestamp="20210123 16:50:44.015" level="INFO">Clicking element '//div[@id="nav-cart-count-container"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:44.014" endtime="20210123 16:50:51.269"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210123 16:50:54.272" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210123 16:50:51.270" endtime="20210123 16:50:54.272"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="proceedToRetailCheckout"]</arg>
+</arguments>
+<msg timestamp="20210123 16:50:54.273" level="INFO">Clicking element '//input[@name="proceedToRetailCheckout"]'.</msg>
+<status status="PASS" starttime="20210123 16:50:54.273" endtime="20210123 16:50:58.564"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//span[text()='Pay on Delivery'])[2]</arg>
+</arguments>
+<msg timestamp="20210123 16:50:58.566" level="INFO">Clicking element '(//span[text()='Pay on Delivery'])[2]'.</msg>
+<status status="PASS" starttime="20210123 16:50:58.565" endtime="20210123 16:50:58.982"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210123 16:51:00.983" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210123 16:50:58.982" endtime="20210123 16:51:00.983"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//input[@class="a-button-input a-button-text"])[3]</arg>
+</arguments>
+<msg timestamp="20210123 16:51:00.984" level="INFO">Clicking element '(//input[@class="a-button-input a-button-text"])[3]'.</msg>
+<status status="PASS" starttime="20210123 16:51:00.984" endtime="20210123 16:51:01.257"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//a[text()='Change'])[1]</arg>
+</arguments>
+<msg timestamp="20210123 16:51:01.258" level="INFO">Clicking element '(//a[text()='Change'])[1]'.</msg>
+<status status="PASS" starttime="20210123 16:51:01.257" endtime="20210123 16:51:04.574"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210123 16:51:06.577" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210123 16:51:04.575" endtime="20210123 16:51:06.577"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>(//div[text()='Add a new shipping address'])[4]</arg>
+</arguments>
+<msg timestamp="20210123 16:51:06.578" level="INFO">Clicking element '(//div[text()='Add a new shipping address'])[4]'.</msg>
+<status status="PASS" starttime="20210123 16:51:06.578" endtime="20210123 16:51:09.685"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressFullName"]</arg>
+<arg>valli</arg>
+</arguments>
+<msg timestamp="20210123 16:51:09.687" level="INFO">Typing text 'valli' into text field '//input[@name="address-ui-widgets-enterAddressFullName"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:09.686" endtime="20210123 16:51:10.233"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressPhoneNumber"]</arg>
+<arg>8919644707</arg>
+</arguments>
+<msg timestamp="20210123 16:51:10.234" level="INFO">Typing text '8919644707' into text field '//input[@name="address-ui-widgets-enterAddressPhoneNumber"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:10.234" endtime="20210123 16:51:10.757"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressPostalCode"]</arg>
+<arg>534211</arg>
+</arguments>
+<msg timestamp="20210123 16:51:10.758" level="INFO">Typing text '534211' into text field '//input[@name="address-ui-widgets-enterAddressPostalCode"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:10.757" endtime="20210123 16:51:11.225"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressLine1"]</arg>
+<arg>narendra center</arg>
+</arguments>
+<msg timestamp="20210123 16:51:11.226" level="INFO">Typing text 'narendra center' into text field '//input[@name="address-ui-widgets-enterAddressLine1"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:11.225" endtime="20210123 16:51:11.963"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressLine2"]</arg>
+<arg>rudraraju vari street</arg>
+</arguments>
+<msg timestamp="20210123 16:51:11.964" level="INFO">Typing text 'rudraraju vari street' into text field '//input[@name="address-ui-widgets-enterAddressLine2"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:11.964" endtime="20210123 16:51:13.034"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-landmark"]</arg>
+<arg>narendra theater</arg>
+</arguments>
+<msg timestamp="20210123 16:51:13.035" level="INFO">Typing text 'narendra theater' into text field '//input[@name="address-ui-widgets-landmark"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:13.035" endtime="20210123 16:51:13.770"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-enterAddressCity"]</arg>
+<arg>tanuku</arg>
+</arguments>
+<msg timestamp="20210123 16:51:13.771" level="INFO">Typing text 'tanuku' into text field '//input[@name="address-ui-widgets-enterAddressCity"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:13.771" endtime="20210123 16:51:14.296"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="address-ui-widgets-use-as-my-default"]</arg>
+</arguments>
+<msg timestamp="20210123 16:51:14.298" level="INFO">Clicking element '//input[@name="address-ui-widgets-use-as-my-default"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:14.297" endtime="20210123 16:51:14.634"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@class="a-button-input"]</arg>
+</arguments>
+<msg timestamp="20210123 16:51:14.635" level="INFO">Clicking element '//input[@class="a-button-input"]'.</msg>
+<status status="PASS" starttime="20210123 16:51:14.635" endtime="20210123 16:51:14.965"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//td[@class="a-color-price a-size-medium a-text-right grand-total-price aok-nowrap a-text-bold a-nowrap"]</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20210123 16:51:18.767" level="INFO">${text} = ₹ 2,060.00</msg>
+<status status="PASS" starttime="20210123 16:51:14.965" endtime="20210123 16:51:18.768"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:51:18.768" endtime="20210123 16:51:18.769"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//strong[text()='Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large']</arg>
+</arguments>
+<assign>
+<var>${product_name}</var>
+</assign>
+<msg timestamp="20210123 16:51:18.898" level="INFO">${product_name} = Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large</msg>
+<status status="PASS" starttime="20210123 16:51:18.769" endtime="20210123 16:51:18.898"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${product_name}</arg>
+</arguments>
+<status status="PASS" starttime="20210123 16:51:18.899" endtime="20210123 16:51:18.900"></status>
+</kw>
+<status status="PASS" starttime="20210123 16:49:38.133" endtime="20210123 16:51:18.900" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210123 16:49:37.856" endtime="20210123 16:51:18.901"></status>
+</suite>
+<status status="PASS" starttime="20210123 16:49:37.840" endtime="20210123 16:51:18.905"></status>
+</suite>
+<status status="PASS" starttime="20210123 16:49:37.758" endtime="20210123 16:51:18.907"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Amazon">Amazon</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Verify User">Amazon.Verify User</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="ValidUser">Amazon.Verify User.ValidUser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
