@@ -51,7 +51,9 @@ TC1_Valid
     Enter City    tanuku
     Click Default
     Click Ok
-    ${text}    Get Text    //td[@class="a-color-price a-size-medium a-text-right grand-total-price aok-nowrap a-text-bold a-nowrap"]
-    Log To Console    ${text}   
-    ${product_name}    Get Text    //strong[text()='Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large']
-    Log To Console    ${product_name}
+   # ${text}    Get Text    //td[@class="a-color-price a-size-medium a-text-right grand-total-price aok-nowrap a-text-bold a-nowrap"]
+   # Log To Console    ${text}   
+   # ${product_name}    Get Text    //strong[text()='Vstargallery Soft Cute 3 feet Teddy Bear for Girls/Lover Gift Pink 90 cm Large']
+   # Log To Console    ${product_name}
+    verify amount   
+    verify name 
