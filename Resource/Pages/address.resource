@@ -55,3 +55,10 @@ Click Default
 Click Ok
     Click Element     ${CLICKOK_LOCATOR}
     
+verify name
+    ${product_name}    Get Text    ${GETPRODUCTNAME_LOCATOR}
+    Log To Console    ${product_name}
+    
+verify amount
+    ${text}    Get Text    ${VERIFYAMOUNT_LOCATOR}
+    Log To Console    ${text}
